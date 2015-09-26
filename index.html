@@ -133,13 +133,7 @@
           <p>公益404页面是由腾讯公司员工志愿者自主发起的互联网公益活动。</p>
           <p>网站只需要在自己的404页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。</p>
           <!-- iShare BEGIN -->
-          <script type="text/javascript" src="http://joke.qq.com/qshare/iShare.js"></script>
-          <script type="text/javascript">
-            (function(){
-              window["iShare"]={title:"公益404页面是由腾讯公司员工志愿者自主发起的互联网公益活动，只需要将一段代码放进自己网站的404页中，就可以通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率，代码虽少，情义无价，欢迎参与和传播！",url:"http://www.qq.com/404/",imgUrl:"http://mat1.gtimg.com/www/404/banner.jpg"};
-              shareQQ({WB:false});
-            })();
-          </script>
+
           <!-- iShare END -->
         </div>
       </div>
@@ -161,46 +155,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-    var nf = window.nf || {};
-    nf.imagesList = [];
-    nf.shareData = {
-      img_url: 'http://mat1.gtimg.com/www/404/banner.jpg',
-      img_width: '960',
-      img_height: '300',
-      link: 'http://www.qq.com/404/',
-      desc: "公益404页面是由腾讯公司员工志愿者自主发起的互联网公益活动，只需要将一段代码放进自己网站的404页中，就可以通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率，代码虽少，情义无价，欢迎参与和传播！",
-      title: "公益 404"
-    }
-
-    document.addEventListener('WeixinJSBridgeReady', function() {
-      WeixinJSBridge.on('menu:share:appmessage', shareFriends);
-      WeixinJSBridge.on('menu:share:timeline', shareTimeline);
-
-      var images = document.getElementsByTagName('img');
-      for (var i = 0; i < images.length; i++) {
-        if(images[i].className.indexOf('nf-image') > -1) {
-          nf.imagesList.push(images[i].src);
-          images[i].addEventListener('click', function(e) {
-            var target = e.target;
-            WeixinJSBridge && WeixinJSBridge.invoke('imagePreview',{
-              'current': target.src,
-              'urls': nf.imagesList
-            });
-          });
-        }
-      }
-    });
-
-    function shareFriends() {
-        WeixinJSBridge && WeixinJSBridge.invoke("sendAppMessage", nf.shareData, function(b) {})
-    }
-
-    function shareTimeline() {
-        WeixinJSBridge && WeixinJSBridge.invoke("shareTimeline", nf.shareData, function(b) {})
-    }
-  </script>
-  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=38907280" charset="UTF-8"></script>
 </body>
 </html>
 <!--[if !IE]>|xGv00|2eec7f264c4a5d2aa38ba0076c5da2e1<![endif]-->
